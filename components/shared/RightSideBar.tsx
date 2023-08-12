@@ -5,7 +5,7 @@ import UserCard from "../cards/UserCard";
 import { fetchCommunities } from "@/lib/actions/community.actions";
 import { fetchUsers } from "@/lib/actions/user.actions";
 
-async function RightSidebar() {
+async function RightSideBar() {
   const user = await currentUser();
   if (!user) return null;
 
@@ -70,4 +70,4 @@ async function RightSidebar() {
   );
 }
 
-export default RightSidebar;
+export default RightSideBar;
